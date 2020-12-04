@@ -31,27 +31,30 @@
                                             <rect key="frame" x="105" y="116" width="240" height="128"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ey-jg-awx">
-                                            <rect key="frame" x="70" y="300" width="311" height="34"/>
+                                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ユーザ名を入力" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ey-jg-awx">
+                                            <rect key="frame" x="105" y="345" width="240" height="34"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="38u-6g-fSA">
-                                            <rect key="frame" x="70" y="404" width="311" height="34"/>
+                                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワードを入力" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="38u-6g-fSA">
+                                            <rect key="frame" x="105" y="407" width="240" height="34"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         </textField>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZ6-gu-M3q">
-                                            <rect key="frame" x="70" y="550" width="311" height="62"/>
+                                            <rect key="frame" x="105" y="514" width="240" height="46"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                             <state key="normal" title="Login">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
                                             </state>
+                                            <connections>
+                                                <action selector="Login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="16r-KC-D53"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </view>
@@ -61,6 +64,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="logoImageView" destination="QE9-OX-BFG" id="NID-hX-oyk"/>
+                        <outlet property="passWordTextField" destination="38u-6g-fSA" id="ggZ-jk-Arv"/>
+                        <outlet property="userNameTextField" destination="3ey-jg-awx" id="bOF-OI-NZe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
