@@ -12,6 +12,8 @@ class ViewController: UIViewController {
   @IBOutlet weak var logoImageView: UIImageView!
   @IBOutlet weak var userNameTextField: UITextField!
   @IBOutlet weak var passWordTextField: UITextField!
+  @IBOutlet weak var userNameLabel: UILabel!
+  @IBOutlet weak var passWordLabel: UILabel!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -20,8 +22,8 @@ class ViewController: UIViewController {
   }
 
   @IBAction func Login(_ sender: Any) {
-    
-    
+    userNameLabel.text = userNameTextField.text
+    passWordLabel.text = passWordTextField.text
   }
   
 }
