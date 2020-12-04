@@ -32,6 +32,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
     passWordLabel.text = passWordTextField.text
   }
   
+  // タッチでキーボードを閉じる
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    view.endEditing(true)
+  }
+  
   // リターンキーを押したときにキーボードを閉じる
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     // キーボードが閉じる
