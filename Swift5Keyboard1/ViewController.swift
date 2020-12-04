@@ -32,5 +32,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
     passWordLabel.text = passWordTextField.text
   }
   
+  // リターンキーを押したときにキーボードを閉じる
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    // キーボードが閉じる
+    textField.resignFirstResponder()
+    return true
+  }
 }
 
